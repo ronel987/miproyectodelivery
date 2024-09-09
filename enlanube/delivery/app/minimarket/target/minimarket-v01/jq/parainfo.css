@@ -1,0 +1,244 @@
+/*
+    tema parainfo 
+*/
+:root {
+    --pi-bg-color-radial: radial-gradient(#a34e26, #832e06);
+    --pi-bg-color-radial2: radial-gradient(#f7d8b3, #e7c8a3); /*radial-gradient(#ffbb92, #ef9a72);*/
+    --pi-color-dark: #832e06;
+    --pi-color-light: #fff5ee;
+    --pi-color-dark2: #b35e36;
+    --pi-color-light2: #efe5de;
+
+    --table-bg-color-odd: #fff5ee; /* filas impares */
+    --table-bg-color-even: #ffffff; /* filas pares */
+    --table-bg-color-hover: #ffffe0;  /* filas hover */
+    --table-bg-body-filsel: #f2f2f9; /* fila seleccionada en tbody */
+
+    /* head (menú de cabecera) */
+    --bs-list-group-bg: #fff5ee;
+
+}
+
+/* offcanvas - menú lateral */
+.offcanvas-parainfo .list-group a {
+    text-decoration: none !important;
+    color: var(--pi-color-dark);
+}
+
+.offcanvas-parainfo hr {
+    border-top: 1px solid var(--pi-color-light2);
+}
+
+.offcanvas-parainfo {
+    opacity: 0.9;
+    background-color: var(--pi-color-light);
+}
+
+.offcanvas-parainfo .accordion-item {
+    background-color: var(--pi-color-light);
+}
+
+.offcanvas-parainfo button.accordion-button {
+    background-color: var(--pi-color-light);
+    color: var(--pi-color-dark);
+}
+
+.offcanvas-parainfo button.accordion-button:focus, div.parainfo button.accordion-button:active{
+    color: var(--pi-color-dark);
+    background-color: var(--pi-color-light2);
+}
+
+.offcanvas-parainfo .accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(163, 153, 156, 0.25);
+    color: var(--pi-color-dark2);
+}
+
+.offcanvas-parainfo .list-group {
+    --bs-list-group-bg: var(--pi-color-light);
+    --bs-list-group-border-color: var(--pi-color-light);
+    --bs-list-group-action-hover-bg: var(--pi-color-light2);
+    --bs-list-group-action-hover-color: var(--pi-color-dark);
+}
+
+/* tablas CRUD */
+table.parainfo,
+table.parainfo thead tr td:last-child,
+table.parainfo thead tr th:last-child,
+table.parainfo tbody tr td:last-child,
+table.parainfo tbody tr th:last-child{
+    width: 100%;
+}
+
+table.parainfo thead, table.parainfo thead,
+table.parainfo tfoot, table.parainfo tfoot {
+    background: var(--pi-bg-color-radial2);
+    color: var(--pi-color-dark);
+}
+
+div.parainfo_overflow {
+    border-left: 1px solid var(--pi-color-light2) !important;
+    border-right: 1px solid var(--pi-color-light2) !important;
+}
+
+table.parainfo tbody {
+    color: var(--pi-color-dark);
+}
+
+table.parainfo tbody tr:nth-of-type(odd) td {
+    background-color: var(--table-bg-color-odd);
+    color: var(--table-color);
+}
+
+table.parainfo tbody tr:nth-of-type(even) td{
+    background-color: var(--table-bg-color-even);
+    color: var(--table-color);
+}
+
+table.parainfo tbody tr:hover td{
+    background-color: var(--table-bg-color-hover);
+    color: var(--table-color);
+}
+
+table.parainfo span.btn {
+    background-color: var(--pi-color-dark2);
+    color: var(--pi-color-light2);
+    padding: 0px 4px 1px 4px
+}
+
+table.parainfo span.btn:focus, table.parainfo span.btn:hover {
+    background-color: var(--pi-color-dark);
+    color: var(--pi-color-light);
+}
+
+/* separator entre botones */
+table.parainfo div.vr {
+    color: var(--pi-color-dark2);
+    border-left: dotted;
+    border-width: 1px;
+    height: 30px;
+    margin-bottom: -10px
+}
+
+/* fila seleccionada en tabla CRUD */
+table.parainfo .fil-sel {
+    background-color: var(--table-bg-body-filsel) !important;
+}
+
+/* modales */
+.modal-parainfo {
+    opacity: 0.9;
+    color: var(--pi-color-dark);
+}
+
+.modal-parainfo .modal-header {
+    background: var(--pi-bg-color-radial2);
+    color: var(--pi-color-dark);
+}
+
+.modal-parainfo .btn {
+    background: var(--pi-bg-color-radial2);
+    color: var(--pi-color-dark);
+}
+
+.modal-parainfo a, .modal-parainfo span {
+    color: var(--pi-color-dark);
+}
+
+.modal-parainfo .form-check-input:checked,
+table.parainfo .form-check-input:checked{
+    background-color: var(--pi-color-dark);
+    border-color: var(--pi-color-dark2);
+}
+
+/* cabecera de páginas */
+div.head-parainfo {
+    background: var(--pi-bg-color-radial);
+    color: var(--pi-color-light);
+}
+
+div.head-parainfo ul.dropdown-menu {
+    background-color: var(--pi-color-light);
+}
+
+div.head-parainfo ul.dropdown-menu a:hover{
+    background-color: var(--pi-color-light2) !important;
+}
+
+div.head-parainfo i.bi-list {
+    font-size: 24px;
+    color: var(--pi-color-light);
+}
+
+div.head-parainfo div.btn-group button i {
+    font-size: 28px;
+    color: var(--pi-color-light);
+}
+
+div.head-parainfo .dropdown-item {
+    color: var(--pi-color-dark);
+}
+
+button.parainfo {
+    background: var(--pi-bg-color-radial);
+    color: var(--pi-color-light);
+}
+
+button.parainfo:hover, button.parainfo:focus, button.parainfo:active {
+    color: var(--pi-color-light2);
+}
+
+span.parainfo {
+    background: var(--pi-bg-color-radial);
+    color: var(--pi-color-light);
+    border-color: var(--pi-color-dark);
+    cursor: pointer;
+}
+
+span.parainfo:hover, span.parainfo:focus, span.parainfo:active {
+    color: var(--pi-color-light2);
+}
+
+a.parainfo {
+    color: var(--pi-color-dark);
+    /*cursor: pointer;*/
+    text-decoration: none;
+}
+
+a.parainfo:hover, a.parainfo:focus, a.parainfo:active {
+    text-decoration: underline;
+}
+
+label.parainfo {
+    color: var(--pi-color-dark);
+}
+
+.marco {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    opacity: 0.9;
+
+    background: var(--pi-bg-color-radial2);
+    color: var(--pi-color-dark);
+    padding: 30px 40px;
+}
+
+.card-parainfo {
+    --bs-card-border-color: var(--pi-color-light2);
+    color: var(--pi-color-dark);
+}
+
+.card-parainfo .card-header, .card-parainfo .card-footer {
+    background: var(--pi-bg-color-radial2);
+    color: var(--pi-color-dark);
+}
+
+.card-parainfo button.parainfo {
+    background-color: var(--pi-color-dark2);
+    color: var(--pi-color-light2);
+}
+
+.card-parainfo button.parainfo:hover, .card-parainfo button.parainfo:focus, .card-parainfo button.parainfo:active {
+    background: var(--pi-bg-color-radial);
+    color: var(--pi-color-light);
+}

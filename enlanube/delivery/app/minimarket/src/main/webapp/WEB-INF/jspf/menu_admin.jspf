@@ -1,0 +1,35 @@
+<%@ page pageEncoding="UTF-8" %>
+
+<div class="offcanvas offcanvas-start offcanvas-parainfo" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="mvertical" aria-labelledby="mverticalLabel">
+    <div class="offcanvas-header">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body" style="margin-top: -20px">
+        <hr/>
+        <%-- Menú de Opciones --%>
+        <div class="accordion accordion-flush" id="menu_main">
+
+            <%-- Componentes --%>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-tab_componentes">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tab_componentes" aria-expanded="false" aria-controls="tab_componentes">
+                        Mantenimientos
+                    </button>
+                </h2>
+                <div id="tab_componentes" class="accordion-collapse collapse" aria-labelledby="flush-tab_componentes" data-bs-parent="#menu_main">
+                    <div class="accordion-body pt-2">
+                        <div class="list-group">
+                            <a href="categorias.jsp" class="list-group-item list-group-item-action">Categorías</a>
+                            <a href="productos.jsp" class="list-group-item list-group-item-action">Productos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <hr/>
+    </div>
+</div>
+

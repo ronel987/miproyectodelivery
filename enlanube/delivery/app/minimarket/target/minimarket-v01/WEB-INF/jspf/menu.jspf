@@ -1,0 +1,59 @@
+<%@ page pageEncoding="UTF-8" %>
+
+<nav class="navbar navbar-expand-lg fixed-top" style="background-color: #f7d8b3">
+    <div id="home_head" style="opacity: 0.7">
+        <div class='air air1'></div>
+        <div class='air air2'></div>
+        <div class='air air3'></div>
+        <div class='air air4'></div>
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-parainfo">
+
+    <a class="navbar-brand" href="index.jsp" title="Ir a Inicio">
+        <span style="font-size: 30px;font-weight: bold;padding-left: 6px;color: #832e06">
+            <img src="images/delivery.png" alt=""/>
+        </span>
+    </a>
+    
+    <%-- hamburguesa --%>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barraDeMenu" aria-controls="barraDeMenu" 
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <%-- menus --%>
+    <div class="collapse navbar-collapse" id="barraDeMenu"> 
+        <ul class="navbar-nav ms-auto" style="padding: 10px 50px 10px 20px">
+            
+            <!-- Categorías -->
+            <li class="nav-item">
+                <a href="index.jsp" class="nav-link">
+                    Categorías
+                </a>
+            </li>
+
+            <!-- Productos -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="menu_productos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Productos
+                </a>
+                <div id="menu_productos_main" class="dropdown-menu" aria-labelledby="menu_productos"></div>
+            </li>
+
+            <!-- Home -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="menu_usuarios" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Administrador
+                </a>
+                <div class="dropdown-menu" aria-labelledby="menu_usuarios">
+                    <a class="dropdown-item" href="admin.jsp">
+                        <i class="bi-person-workspace"></i> Administrar
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+

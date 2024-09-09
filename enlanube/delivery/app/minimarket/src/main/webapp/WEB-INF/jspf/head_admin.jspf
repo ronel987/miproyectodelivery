@@ -1,0 +1,49 @@
+<%@ page pageEncoding="UTF-8" %>
+
+<div class="row head-parainfo">
+    <table style="width: 100%">
+        <tr>
+            <td style="width: 50%">
+                <img src="../../images/usuarios/karina.jpg" class="rounded-circle" style="height: 70px;padding-left: 20px;padding-right: 30px;vertical-align: top" title="Leasing"/> 
+                <a href="#" title="Menu Lateral"
+                   class="btn btn-primary-outline p-0" role="button"
+                   data-bs-toggle="offcanvas" 
+                   data-bs-target="#mvertical" 
+                   aria-controls="mvertical">
+                    <i class="bi-list"></i>
+                </a>
+            </td>
+            <td style="width: 50%;padding: 10px 16px 10px">
+                <table style="float: right;">
+                    <tr>
+                        <td class="text-center" style="vertical-align: bottom;padding-bottom: 0px">
+                            <span id="user_log"></span>
+                            <input type="hidden" id="user_idusuario"/>
+                        </td>
+                        <td rowspan="2" style="width: 50px;padding-left: 10px">
+                            <div class="btn-group dropstart">
+                                <button type="button" class="btn" style="background-color:transparent" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                    <i class="bi-house-fill"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="index.jsp"><i class="bi-1-circle"></i> Página Inicial</a></li>
+                                    <li><a class="dropdown-item" href="#" onclick="salir();"><i class="bi-box-arrow-right"></i> Salir del Sistema</a></li>
+                                    <li><hr/></li>
+                                    <li><a class="dropdown-item" href="usuariosPassword.jsp"><i class="bi-unlock-fill"></i> Cambiar Password</a></li>
+                                    <li><a class="dropdown-item" href="usuarios.jsp"><i class="bi-person-fill"></i> Usuarios</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center" style="vertical-align: text-top;padding-top: 0px">
+                            <span id="user_ahora" style="font-size: 12px"></span>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div style="clear: both"></div>
+</div>
+

@@ -1,0 +1,32 @@
+<%@ page pageEncoding="UTF-8" %>
+
+<div id="dlg_confirm" class="modal modal-parainfo" aria-hidden="true"
+      data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            
+            <div class="modal-header">
+                <h5 id="dlg_confirm_title" class="modal-title">Confirme</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div id="dlg_confirm_msg" class="text-center p-4 message"></div>
+
+                        <input type="hidden" id="dlg_confirm_dato1"/>
+                        <input type="hidden" id="dlg_confirm_dato2"/>
+                        
+                        <div id="dlg_confirm_error" class="alert alert-danger m-3 p-3 text-center" style="display: none"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn" onclick="dlg_confirm_confirm();">Si</button>
+                <button type="button" class="btn" data-bs-dismiss="modal">No</button>
+            </div>
+        </div>
+    </div>
+</div>
